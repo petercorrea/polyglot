@@ -1,0 +1,1 @@
+// Go treats errors as values, must do error checking
