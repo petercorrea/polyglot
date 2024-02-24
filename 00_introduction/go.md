@@ -20,7 +20,7 @@ Go differs from other programming languages in several ways:
 - **From Java**: Go provides a simpler, more efficient way to achieve concurrency, avoiding the heavyweight thread model. It also eliminates the need for a virtual machine, compiling directly to native code.
 - **From Python**: Go offers static typing and compiles to binary code, resulting in faster execution times. However, Go maintains simplicity in syntax, similar to Python, making it accessible for rapid development.
 
-### Installation and Setup of the Go Environment
+### Installation and Setup
 
 Setting up the Go environment is straightforward:
 
