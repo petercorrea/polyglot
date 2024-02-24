@@ -16,6 +16,10 @@ In JavaScript, the way variables are declared, scoped, and hoisted can significa
 
 - **TDZ for `let` and `const`**: Variables declared with `let` and `const` are also hoisted but not initialized, creating a temporal dead zone from the start of the block until the declaration is encountered. Accessing a `let` or `const` variable in its TDZ results in a ReferenceError, highlighting a crucial difference from `var`.
 
+#### Closures
+
+Closures allow a function to access variables from an enclosing scope, even after that scope has closed.
+
 ### Code Examples with Common Misconceptions
 
 #### `var` Misconception: Block Scope

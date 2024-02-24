@@ -19,6 +19,7 @@ Python's approach to variables and scope is characterized by simplicity and flex
 
 - **`global`**: Used to declare that a variable inside a function is global (outside the function).
 - **`nonlocal`** (Python 3+): Used to declare that a variable inside a nested function refers to a variable in the enclosing (non-global) scope.
+global and nonlocal keywords allow functions to modify variables defined in outer scopes, directly impacting variable lifetime and visibility across different parts of a program.
 
 #### Immutability
 

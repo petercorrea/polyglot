@@ -20,6 +20,24 @@ In C programming, variables are placeholders for storing data values. C requires
 
 - Pointers in C are variables that store memory addresses. They are powerful tools for dynamic memory management and for manipulating arrays, strings, and other data structures.
 
+### Storage Classes in C
+
+C has four storage classes that determine the lifetime, visibility, and linkage of variables:
+
+- **auto**: The default storage class for local variables. `auto` variables have automatic storage duration, which means they are automatically allocated upon entering their block and deallocated upon exiting it. This storage class is rarely specified explicitly.
+  
+- **register**: Hints to the compiler that a variable should be stored in a CPU register for faster access. However, the use of this storage class is a request, not a command; the compiler can ignore it. `register` variables have automatic storage duration and no linkage.
+  
+- **static**: Variables declared with `static` have static storage duration, meaning they are allocated when the program starts and deallocated when the program ends. For local variables, `static` extends their lifetime to the entire execution of the program, preserving their value between function calls. Global `static` variables or functions are visible only within the file they are declared in, due to internal linkage.
+  
+- **extern**: Used to declare a global variable or function in another file. The `extern` storage class gives a variable or function external linkage, allowing it to be visible in other files besides the one in which it is declared.
+
+### Lifetimes and Visibility
+
+- **Lifetime**: The lifetime of a variable in C refers to the duration a variable exists in memory during the program's execution. Local variables typically have automatic lifetime, which is limited to the block they are defined in, whereas global variables, and those declared `static`, have a lifetime that spans the entire execution of the program.
+  
+- **Visibility and Linkage**: The visibility of a variable or function refers to which parts of a program can access it. This is controlled by the variable's linkage: external linkage (accessible from other files), internal linkage (accessible only within the file), or no linkage (local variables).
+
 ### Code Examples
 
 #### Variable Declarations and Scope
