@@ -1,3 +1,7 @@
+# C Language - Types Overview
+
+The C programming language offers a robust system of types that underpins its flexibility and efficiency as a low-level programming language. Understanding these types is crucial for effective C programming, as they dictate how data is stored, manipulated, and interpreted.
+
 #### Primitive Types
 
 - **char**: Represents single characters or small integers. Size: 1 byte.
